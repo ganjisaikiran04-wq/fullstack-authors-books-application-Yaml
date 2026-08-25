@@ -44,7 +44,7 @@ export default function Layout() {
           {/* Logo */}
           <Link to="/" className={styles.logo}>
             <div className={styles.logoIcon}><BookOpen size={20} /></div>
-            <span className={styles.logoText}><Dev></Dev><em>Ops Books</em></span>
+            <span className={styles.logoText}>Dev<em>Ops Books</em></span>
           </Link>
 
           {/* Desktop nav links */}
