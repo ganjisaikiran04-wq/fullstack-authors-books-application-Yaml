@@ -26,7 +26,7 @@
 ## ------------------------------------Backend------------
 ### ->>connect to backend server--
 ```
- git clone https://github.com/CloudTechDevOps/2nd10WeeksofCloudOps-main.git
+ git clone https://github.com/ganjisaikiran04-wq/fullstack-authors-books-application-Yaml.git
    cd backend
 ```
  ### edit the .env file in bellow path if u dont have any .env file just create in below path
@@ -36,7 +36,7 @@
 ### add this mater
 DB_HOST=book.rds.com	#change rds endpoint
 DB_USERNAME=admin	#cahnge to nyour rds user name 
-DB_PASSWORD="veera"   # change to your rds password
+DB_PASSWORD="saikiran"   # change to your rds password
 PORT=3306
 ```
 ```
