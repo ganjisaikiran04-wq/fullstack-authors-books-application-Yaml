@@ -49,7 +49,7 @@ export default function BooksPage() {
           <p className={styles.eyebrow}>Your digital library With</p>
           <h1 className={styles.heading}>
             Multicloud Devops<br />
-            <em>By Veera Sir Nareshit</em>
+            <em>By 10:30AM batch Nareshit</em>
           </h1>
           <p className={styles.sub}>
             A complete platform to learn, explore, and master AWS, Azure, Kubernetes, Terraform, CI/CD, and modern cloud technologies with real-time projects..
