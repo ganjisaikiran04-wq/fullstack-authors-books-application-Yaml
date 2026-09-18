@@ -2,12 +2,12 @@ pipeline {
     agent any
 
     environment {
-        AWS_ACCOUNT_ID = "545009827818"
-        AWS_REGION     = "ap-south-1"
+        AWS_ACCOUNT_ID = "250368537874"
+        AWS_REGION     = "us-east-1"
         ECR_REPO       = "frontend"
         IMAGE_NAME     = "frontend"
-        GIT_REPO_NAME  = "2nd10WeeksofCloudOps-main"
-        GIT_USER_NAME  = "CloudTechDevOps"
+        GIT_REPO_NAME  = "fullstack-authors-books-application-Yaml-main"
+        GIT_USER_NAME  = "ganjisaikiran04-wq"
     }
 
     stages {
@@ -20,7 +20,7 @@ pipeline {
 
         stage('Checkout from Git') {
             steps {
-                git branch: 'main', url: 'https://github.com/CloudTechDevOps/2nd10WeeksofCloudOps-main.git'
+                git branch: 'main', url: 'https://github.com/ganjisaikiran04-wq/fullstack-authors-books-application-Yaml.git'
             }
         }
 
@@ -57,10 +57,10 @@ pipeline {
                 dir('kubernetes-files') {
                     withCredentials([string(credentialsId: 'my-git-pattoken', variable: 'git_token')]) {
                         sh '''
-                            git config user.email "cloud87777@gmail.com"
-                            git config user.name "CloudTechDevOps"
+                            git config user.email "ganjisaikiran04@gmail.com"
+                            git config user.name "ganjisaikiran04-wq"
 
-                            sed -i "s#image:.*#image: ${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/${ECR_REPO}:${BUILD_NUMBER}#g" frontend-deploy-service.yaml
+                            sed -i "s#image:.*#image: ${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/${ECR_REPO}:${BUILD_NUMBER}#g" frontend-deployment.yml
 
                             git add .
                             git commit -m "Update deployment image to version ${BUILD_NUMBER}"
