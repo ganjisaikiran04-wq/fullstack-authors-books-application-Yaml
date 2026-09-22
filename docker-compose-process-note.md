@@ -55,7 +55,7 @@ sudo yum install mariadb105-server -y
 --after that chaange into you project backend dirictroy then run the follwing command  only of rds 
 ```sh    
 mysql -h <rds-end-point> -u admin -p<passowrd> < test.sql
-mysql -h book-rds.c1u4kewc6r37.ap-south-1.rds.amazonaws.com -u admin -pveeranarni < test.sql   ## example command chamge the values
+mysql -h book-rds.c1u4kewc6r37.ap-south-1.rds.amazonaws.com -u admin -pSaikiran < test.sql   ## example command chamge the values
 ```
 
 -- then search the public-ip:80 port in broswer you will get the appliaction deployment then add the book

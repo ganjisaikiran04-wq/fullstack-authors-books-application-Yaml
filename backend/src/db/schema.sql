@@ -107,11 +107,11 @@ INSERT INTO users (id, username, email, password, role) VALUES
 
 INSERT INTO books (id, title, description, price, cover_url, author, category_id, stock, status, created_by) VALUES
   (UUID(), 'The Cloud Architect', 'A comprehensive guide to multi-cloud architectures and DevSecOps practices for modern engineering teams.', 2343.20,
-   'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=400&q=80', 'Veera Kumar', 1, 50, 'active',
+   'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=400&q=80', 'Saikiran', 1, 50, 'active',
    '00000000-0000-0000-0000-000000000001'),
   (UUID(), 'DevOps Mastery', 'Master the art of DevOps: CI/CD pipelines, container orchestration, and infrastructure as code.', 2342.30,
-   'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&q=80', 'Naresh IT', 1, 30, 'active',
+   'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&q=80', 'Saikiran', 1, 30, 'active',
    '00000000-0000-0000-0000-000000000001'),
   (UUID(), 'Kubernetes in Production', 'Battle-tested patterns for running Kubernetes at scale in enterprise environments.', 1899.00,
-   'https://images.unsplash.com/photo-1629654291663-b91ad427698f?w=400&q=80', 'Sarah Chen', 1, 75, 'active',
-   '00000000-0000-0000-0000-000000000001');
+   'https://images.unsplash.com/photo-1629654291663-b91ad427698f?w=400&q=80', 'Saikiran', 1, 75, 'active',
+   '00000000-0000-0000-0000-000000000<PASSWORD>');
